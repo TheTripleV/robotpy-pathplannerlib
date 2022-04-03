@@ -19,13 +19,6 @@ sources = [
     "pathplanner/lib/PathPlannerTrajectory.cpp",
 ]
 sources_classifier = "source"
-# [[tool.robotpy-build.wrappers."pathplannerlib".maven_lib_download.patches]]
-# patch = "navx/src/sources.patch"
-# strip = 1
-
-# [[tool.robotpy-build.wrappers."pathplannerlib".maven_lib_download.header_patches]]
-# patch = "navx/src/ahrs.h.patch"
-# strip = 2
 
 [[tool.robotpy-build.wrappers."pathplannerlib".maven_lib_download.patches]]
 patch = "pathplannerlib/src/sources.patch"
