@@ -48,8 +48,11 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)/*
-	rm -f pathplannerlib.rst
-	rm -rf pathplannerlib
+	rm -rf __pycache__
+	for i in pathplannerlib; do \
+		rm -f $$i.rst; \
+		rm -rf $$i; \
+	done
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html

@@ -124,6 +124,7 @@ epub_exclude_files = ["search.html"]
 
 # -- Custom Document processing ----------------------------------------------
 
+from robotpy_sphinx.regen import gen_package
 from robotpy_sphinx.sidebar import generate_sidebar
 
 generate_sidebar(
@@ -131,3 +132,7 @@ generate_sidebar(
     "pathplannerlib",
     "https://raw.githubusercontent.com/robotpy/docs-sidebar/master/sidebar.toml",
 )
+
+root = abspath(dirname(__file__))
+
+gen_package(root, "pathplannerlib")
