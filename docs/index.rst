@@ -1,6 +1,6 @@
 
 robotpy-pathplannerlib library
-====================
+==============================
 
 This is a python implementation of Michael Jansen's pathplannerlib library.
 
